@@ -1,11 +1,3 @@
-//
-//  ServiceGithub.swift
-//  ServiceGithub
-//
-//  Created by Zhassulan Aimukhambetov on 10/24/19.
-//  Copyright © 2019 Zhassulan Aimukhambetov. All rights reserved.
-//
-
 import Foundation
 import UIKit
 import SwiftKeychainWrapper
@@ -184,3 +176,4 @@ enum GithubScope: String {
     case repo
     case public_repo
 }
+
