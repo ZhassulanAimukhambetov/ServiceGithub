@@ -94,6 +94,77 @@ public class GithubAPI {
             }
         }
     }
+    
+    //MARK: Public functions
+    
+    public func login() {
+        if KeychainWrapper.standard.string(forKey: "token") == nil {
+            do {
+                try GithubAPI.shared.requestAuthCode(scopes: [.public_repo])
+            }
+            catch {
+                print("Error: \(error.localizedDescription)")
+            }
+        } else {
+            print("User already login")
+        }
+    }
+    
+    public func logout() {
+        if KeychainWrapper.standard.string(forKey: "token") != nil {
+            KeychainWrapper.standard.removeObject(forKey: "token")
+        }
+        accessToken = KeychainWrapper.standard.string(forKey: "token")
+    }
+    
+    public func getAllRepositories(completion: @escaping ([Repository]) -> ()) {
+        if accessToken != nil {
+            if var components = URLComponents(string: "https://api.github.com/user/repos") {
+                components.queryItems = [URLQueryItem(name: "access_token", value: self.accessToken!)]
+                if let url = components.url {
+                    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                        if let data = data {
+                            do {
+                                let repositories = try JSONDecoder().decode([Repository].self, from: data)
+                                DispatchQueue.main.async{
+                                    completion(repositories)
+                                }
+                            } catch let error {
+                                print(error.localizedDescription)
+                            }
+                        }
+                    }
+                    task.resume()
+                }
+            }
+        } else {
+            print("User logout")
+        }
+    }
+    
+    public func getStarredRepositories(completion: @escaping ([Repository]) -> ()) {
+        if accessToken != nil {
+            var components = URLComponents(string: "https://api.github.com/user/starred")!
+            components.queryItems = [URLQueryItem(name: "access_token", value: self.accessToken!)]
+            if let url = components.url {
+                let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                    if let data = data {
+                        do {
+                            let starredRepositories = try JSONDecoder().decode([Repository].self, from: data)
+                            DispatchQueue.main.async{
+                                completion(starredRepositories)
+                            }
+                        } catch let error {
+                            print(error.localizedDescription)
+                        }
+                    }
+                }
+                task.resume()
+            }
+        } else {
+            print("User logout")
+        }
+    }
 }
 
 public struct AccessTokenResponse: Codable {
