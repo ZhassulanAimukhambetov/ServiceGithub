@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SwiftKeychainWrapper
 
 public class GithubAPI {
     
@@ -17,7 +18,7 @@ public class GithubAPI {
     private var redirectURL = "githubclient://login.page"
     private var clientID: String?
     private var clientSecret: String?
-    private var accessToken: String?
+    private var accessToken: String? = KeychainWrapper.standard.string(forKey: "token")
     
     public static let shared: GithubAPI = GithubAPI()
     private init() {}
@@ -70,7 +71,8 @@ public class GithubAPI {
                     if let data = data {
                         do {
                             let model = try JSONDecoder().decode(AccessTokenResponse.self, from: data)
-                            self.accessToken = model.accessToken
+                            KeychainWrapper.standard.set(model.accessToken, forKey: "token")
+                            self.accessToken = KeychainWrapper.standard.string(forKey: "token")
                         } catch let err {
                             print(err.localizedDescription)
                         }
