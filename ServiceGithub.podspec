@@ -12,11 +12,11 @@ spec.version                 = "0.0.2"
 
 spec.license                 = { :type => "MIT", :file => "LICENSE" }
 
-spec.author                  = { "Zhassulan" => "aimzhas@gmail.com" }
+spec.author                  = { "Zhassulan Aimukhambetov" => "aimzhas@gmail.com" }
 
-spec.homepage                = "https://github.com/areht007"
+spec.homepage                = "https://github.com/ZhassulanAimukhambetov"
 
-spec.source                  = { :http => 'https://github.com/areht007/SeviceGithub/blob/master/ServiceGithub0.2.0.zip?raw=true' }
+spec.source                  = { :http => 'https://github.com/ZhassulanAimukhambetov/ServiceGithub/blob/master/ServiceGithub.zip?raw=true' }
 spec.exclude_files           = "Classes/Exclude"
 spec.swift_version           = ['4.2', '5.0', '5.1']
 spec.dependency                'SwiftKeychainWrapper'
