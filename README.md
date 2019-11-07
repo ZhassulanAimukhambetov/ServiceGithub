@@ -24,5 +24,3 @@ How to use this pod:
     - GithubAPI.shared.getAllRepositories().
     - GithubAPI.shared.getStarredRepositories().
     ```
-   
- - Configure your app by: GithubAPI.configure(clientID: "", clientSecret: "", redirectURL: "")
