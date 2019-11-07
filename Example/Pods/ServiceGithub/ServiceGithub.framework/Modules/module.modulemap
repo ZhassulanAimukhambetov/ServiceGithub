@@ -1,0 +1,11 @@
+framework module ServiceGithub {
+  umbrella header "ServiceGithub.h"
+
+  export *
+  module * { export * }
+}
+
+module ServiceGithub.Swift {
+    header "ServiceGithub-Swift.h"
+    requires objc
+}
