@@ -1,10 +1,10 @@
 PODS:
-  - ServiceGithub (0.0.1):
+  - ServiceGithub (0.0.2):
     - SwiftKeychainWrapper
   - SwiftKeychainWrapper (3.4.0)
 
 DEPENDENCIES:
-  - ServiceGithub
+  - ServiceGithub (~> 0.0.2)
 
 SPEC REPOS:
   trunk:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
-  ServiceGithub: c2cc3077f67b38b40e36a51ef2ab8a59bdc9e807
+  ServiceGithub: f325bb40ca03a46e8919bc6690b5938cf33691d3
   SwiftKeychainWrapper: 6fc49fbf7d4a6b0772917acb0e53a1639f6078d6
 
-PODFILE CHECKSUM: 7f7593b7f844e59d34b8becd264278d5378bf2e3
+PODFILE CHECKSUM: bcf7c3c6008cc72329c0b04f8f8c2218bc209c04
 
 COCOAPODS: 1.8.4

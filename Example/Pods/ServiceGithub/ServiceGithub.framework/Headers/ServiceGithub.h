@@ -2,11 +2,11 @@
 //  ServiceGithub.h
 //  ServiceGithub
 //
-//  Created by Zhassulan Aimukhambetov on 10/24/19.
+//  Created by Zhassulan Aimukhambetov on 10/25/19.
 //  Copyright © 2019 Zhassulan Aimukhambetov. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for ServiceGithub.
 FOUNDATION_EXPORT double ServiceGithubVersionNumber;

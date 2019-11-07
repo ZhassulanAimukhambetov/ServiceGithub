@@ -6,23 +6,31 @@
 	<dict>
 		<key>Headers/ServiceGithub-Swift.h</key>
 		<data>
-		4k61BZfRdvU6Vrs/AIAfRWgsgp0=
+		bqfK8jkoXf6m/imDlDIfeWAQPCQ=
 		</data>
 		<key>Headers/ServiceGithub.h</key>
 		<data>
-		olrMCDOUh+eXba7NQTx/mrBY5Zc=
+		9HeGWA1ty+HqTZidC2VbYjIukgw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		AcD2CbSw2T1lrknd0euFmcUxc4M=
+		OgL9338Fuy8QcW82dJkrnuRVcLc=
+		</data>
+		<key>Modules/ServiceGithub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<data>
+		Km7pJoipzm+ldX/KiFCfTz2Vyog=
+		</data>
+		<key>Modules/ServiceGithub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<data>
+		a0ALsnhxMQBMpD02MzuiPazOP4w=
 		</data>
 		<key>Modules/ServiceGithub.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		oa95FM/PBTjl6JiRCgzpbFFatoc=
+		Km7pJoipzm+ldX/KiFCfTz2Vyog=
 		</data>
 		<key>Modules/ServiceGithub.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IbcAnnF3VDYmPp/ni7YbPWGTLmE=
+		a0ALsnhxMQBMpD02MzuiPazOP4w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -35,28 +43,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dpLmXOmJ9/551glGqcs95mi3R+Opq6aqzjHvw/8k3iE=
+			MlOSajYxIWSFY+yZ1xEYVc6cqo16jP63h1FwAgqw6RM=
 			</data>
 		</dict>
 		<key>Headers/ServiceGithub.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8aGgt4e+2oKR5EGroeT6ExopxOEUJ2BRw3P9C3KLToo=
+			42Z883tazDI5XCEpMeSOBL5ao/P79bSZanolnmd13ps=
+			</data>
+		</dict>
+		<key>Modules/ServiceGithub.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			wKKjQK/Oet9281mPBcmMUStqlfNFo3s+fd950FFvg/E=
+			</data>
+		</dict>
+		<key>Modules/ServiceGithub.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SPLNVdOV+0t13L2I5HhhnuRMIgJicsDzeKjjOxoqwxs=
 			</data>
 		</dict>
 		<key>Modules/ServiceGithub.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CxOXcljaeNqfY3UGDbpJOncTm5QPQzNEpmKQI4wmQE8=
+			wKKjQK/Oet9281mPBcmMUStqlfNFo3s+fd950FFvg/E=
 			</data>
 		</dict>
 		<key>Modules/ServiceGithub.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U46JgkxE6QMowWwfjc8bg7/I8JXkwKWe9VbIouxpuz4=
+			SPLNVdOV+0t13L2I5HhhnuRMIgJicsDzeKjjOxoqwxs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
