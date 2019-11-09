@@ -1,5 +1,5 @@
 # ServiceGithub v0.0.2
-This library that will help to work with GitHub OAuth.
+This library will help to work with GitHub OAuth.
 
 How to use this pod:
  - You need to get client_id and client_secret your app.
